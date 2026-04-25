@@ -1,12 +1,12 @@
-# Opengist
+# مقطع
 
-<img height="108px" src="https://raw.githubusercontent.com/thomiceli/opengist/master/public/img/opengist.svg" alt="Opengist" align="right" />
+<img height="108px" src="https://raw.githubusercontent.com/thomiceli/opengist/master/public/img/opengist.svg" alt="مقطع" align="right" />
 
-Opengist is a **self-hosted** Pastebin **powered by Git**. All snippets are stored in a Git repository and can be
-read and/or modified using standard Git commands, or with the web interface.
-It is similar to [GitHub Gist](https://gist.github.com/), but open-source and could be self-hosted.
+مقطع هو مكان لوضع مقاطع صغيرة من الكود البرمجي **مستضاف ذاتيًا** و**مدعوم بـ Git**. يتم تخزين جميع المقاطع في مستودع Git ويمكن
+قراءتها و/أو تعديلها باستخدام أوامر Git القياسية أو عبر واجهة الويب.
+وهو مشابه لـ [GitHub Gist](https://gist.github.com/)، لكنه مفتوح المصدر ويمكن استضافته ذاتيًا.
 
-[Home Page](https://opengist.io) • [Documentation](https://opengist.io/docs) • [Discord](https://discord.gg/9Pm3X5scZT) • [Demo](https://demo.opengist.io)
+[الصفحة الرئيسية](https://opengist.io) • [التوثيق](https://opengist.io/docs) • [ديسكورد](https://discord.gg/9Pm3X5scZT) • [نسخة تجريبية](https://demo.opengist.io)
 
 
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/thomiceli/opengist?sort=semver)
@@ -15,37 +15,37 @@ It is similar to [GitHub Gist](https://gist.github.com/), but open-source and co
 [![Go Report Card](https://goreportcard.com/badge/github.com/thomiceli/opengist)](https://goreportcard.com/report/github.com/thomiceli/opengist)
 [![Translate](https://tr.opengist.io/widget/_/svg-badge.svg)](https://tr.opengist.io/projects/_/opengist/)
 
-## Features
+## الميزات
 
-* Create public, unlisted or private snippets
-* [Init](/docs/usage/init-via-git.md) / Clone / Pull / Push snippets **via Git** over HTTP or SSH
-* Syntax highlighting ; markdown & CSV support
-* Search code in snippets; browse users snippets, likes and forks
-* Add topics to snippets
-* Embed snippets in other websites
-* Revisions history
-* Like / Fork snippets
-* Download raw files or as a ZIP archive
-* OAuth2 login with GitHub, GitLab, Gitea, and OpenID Connect
-* Restrict or unrestrict snippets visibility to anonymous users
-* Docker support / Helm Chart
-* [More...](/docs/introduction.md#features)
+* إنشاء مقاطع عامة أو غير مدرجة أو خاصة
+* [Init](/docs/usage/init-via-git.md) / Clone / Pull / Push للمقاطع **عبر Git** باستخدام HTTP أو SSH
+* تلوين الصياغة؛ دعم Markdown وCSV
+* البحث في كود المقاطع؛ وتصفح مقاطع المستخدمين والإعجابات والتفريعات
+* إضافة مواضيع للمقاطع
+* تضمين المقاطع في مواقع أخرى
+* سجل المراجعات
+* الإعجاب بالمقاطع / تفريعها
+* تنزيل الملفات الخام أو كأرشيف ZIP
+* تسجيل الدخول عبر OAuth2 مع GitHub وGitLab وGitea وOpenID Connect
+* تقييد أو إلغاء تقييد ظهور المقاطع للمستخدمين المجهولين
+* دعم Docker / Helm Chart
+* [المزيد...](/docs/introduction.md#features)
 
-## Quick start
+## البدء السريع
 
-### With Docker
+### باستخدام Docker
 
-Docker [images](https://github.com/thomiceli/opengist/pkgs/container/opengist) are available for each release :
+صور Docker [images](https://github.com/thomiceli/opengist/pkgs/container/opengist) متاحة لكل إصدار:
 
 ```shell
 docker pull ghcr.io/thomiceli/opengist:1.12
 ```
 
-It can be used in a `docker-compose.yml` file :
+يمكن استخدامه عبر ملف `docker-compose.yml`:
 
-1. Create a `docker-compose.yml` file with the following content
-2. Run `docker compose up -d`
-3. Opengist is now running on port 6157, you can browse http://localhost:6157
+1. أنشئ ملف `docker-compose.yml` بالمحتوى التالي
+2. شغّل `docker compose up -d`
+3. أصبح مقطع يعمل الآن على المنفذ 6157، ويمكنك التصفح عبر http://localhost:6157
 
 ```yml
 services:
@@ -54,13 +54,13 @@ services:
     container_name: opengist
     restart: unless-stopped
     ports:
-      - "6157:6157" # HTTP port
-      - "2222:2222" # SSH port, can be removed if you don't use SSH
+      - "6157:6157" # منفذ HTTP
+      - "2222:2222" # منفذ SSH، ويمكن حذفه إذا لم تستخدم SSH
     volumes:
       - "$HOME/.opengist:/opengist"
 ```
 
-You can define which user/group should run the container and own the files by setting the `UID` and `GID` environment variables :
+يمكنك تحديد المستخدم/المجموعة التي يجب أن تشغّل الحاوية وتمتلك الملفات عبر ضبط متغيري البيئة `UID` و`GID`:
 
 ```yml
 services:
@@ -71,25 +71,25 @@ services:
       GID: 1001
 ```
 
-### Via binary
+### عبر الملف التنفيذي
 
-Download the archive for your system from the release page [here](https://github.com/thomiceli/opengist/releases/latest), and extract it.
+نزّل الأرشيف المناسب لنظامك من صفحة الإصدارات من [هنا](https://github.com/thomiceli/opengist/releases/latest)، ثم فك الضغط.
 
 ```shell
-# example for linux amd64
+# مثال لنظام linux amd64
 wget https://github.com/thomiceli/opengist/releases/download/v1.12.1/opengist1.12.1-linux-amd64.tar.gz
 
 tar xzvf opengist1.12.1-linux-amd64.tar.gz
 cd opengist
 chmod +x opengist
-./opengist # with or without `--config config.yml`
+./opengist # مع أو بدون `--config config.yml`
 ```
 
-Opengist is now running on port 6157, you can browse http://localhost:6157
+أصبح مقطع يعمل الآن على المنفذ 6157، ويمكنك التصفح عبر http://localhost:6157
 
-### From source
+### من المصدر
 
-Requirements: [Git](https://git-scm.com/downloads) (2.28+), [Go](https://go.dev/doc/install) (1.23+), [Node.js](https://nodejs.org/en/download/) (16+), [Make](https://linux.die.net/man/1/make) (optional, but easier)
+المتطلبات: [Git](https://git-scm.com/downloads) (2.28+)، [Go](https://go.dev/doc/install) (1.23+)، [Node.js](https://nodejs.org/en/download/) (16+)، [Make](https://linux.die.net/man/1/make) (اختياري لكنه أسهل)
 
 ```shell
 git clone https://github.com/thomiceli/opengist
@@ -98,17 +98,17 @@ make
 ./opengist
 ```
 
-Opengist is now running on port 6157, you can browse http://localhost:6157
+أصبح مقطع يعمل الآن على المنفذ 6157، ويمكنك التصفح عبر http://localhost:6157
 
 ---
 
-To create and run a development environment, see [run-development.md](/docs/contributing/development.md).
+لإنشاء وتشغيل بيئة تطوير، راجع [run-development.md](/docs/contributing/development.md).
 
-## Documentation
+## التوثيق
 
-The documentation is available at [https://opengist.io/](https://opengist.io/) or in the [/docs](/docs) directory.
+التوثيق متاح على [https://opengist.io/](https://opengist.io/) أو داخل مجلد [/docs](/docs).
 
 
-## License
+## الرخصة
 
-Opengist is licensed under the [AGPL-3.0 license](/LICENSE).
+مقطع مرخّص تحت [AGPL-3.0 license](/LICENSE).

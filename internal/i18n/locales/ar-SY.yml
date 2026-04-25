@@ -2,15 +2,15 @@ gist.public: Public
 gist.unlisted: Unlisted
 gist.private: Private
 
-gist.header.like: Like
-gist.header.unlike: Unlike
+gist.header.like: اعجبني
+gist.header.unlike: لم يعجبني
 gist.header.fork: Fork
 gist.header.edit: Edit
 gist.header.delete: Delete
 gist.header.forked-from: Forked from
 gist.header.last-active: Last active
 gist.header.select-tab: Select a tab
-gist.header.code: Code
+gist.header.code: كود
 gist.header.revisions: Revisions
 gist.header.revision: Revision
 gist.header.clone-http: Clone via %s
@@ -30,7 +30,7 @@ gist.file-not-valid: This file is not a valid CSV file.
 gist.no-content: No files found
 gist.preview-non-available: Preview not available
 
-gist.new.new_gist: New gist
+gist.new.new_gist: مقطع جديد
 gist.new.title: Title
 gist.new.description: Description
 gist.new.url: URL
@@ -55,17 +55,17 @@ gist.new.any-file-type: Upload any file type
 gist.edit.editing: Editing
 gist.edit.edit-gist: Edit %s
 gist.edit.change-visibility: Make
-gist.edit.delete: Delete
-gist.edit.cancel: Cancel
-gist.edit.save: Save
-gist.delete.confirm: Are you sure you want to delete this gist ?
+gist.edit.delete: حذف
+gist.edit.cancel: الغاء
+gist.edit.save: حفظ
+gist.delete.confirm: متأكد أنك تريد حذف هذا المقطع ؟
 
-gist.list.joined: منضم
-gist.list.all: كل الأفكارررر
+gist.list.joined: تم الانضمام
+gist.list.all: كل المقاطع
 gist.list.search-results: نتائج البحث
-gist.list.sort: Sort
-gist.list.sort-by-created: created
-gist.list.sort-by-updated: updated
+gist.list.sort: ترتيب
+gist.list.sort-by-created: تم الانشاء
+gist.list.sort-by-updated: تم التحديث
 gist.list.order-by-asc: Least recently
 gist.list.order-by-desc: Recently
 gist.list.select-tab: Select a tab
@@ -76,7 +76,7 @@ gist.list.forked-from: Forked from
 gist.list.forks: forks
 gist.list.files: files
 gist.list.last-active: Last active
-gist.list.no-gists: No gists
+gist.list.no-gists: لا مقاطع
 gist.list.all-liked-by: All gists liked by %s
 gist.list.all-forked-by: All gists forked by %s
 gist.list.all-from: All gists from %s
@@ -102,7 +102,7 @@ gist.search.placeholder.private: Private
 gist.search.placeholder.language: Language
 gist.search.placeholder.all: All
 gist.search.placeholder.topics: Topics
-gist.search.placeholder.search: Search
+gist.search.placeholder.search: البحث عن
 
 gist.forks: Forks
 gist.forks.view: View fork
@@ -155,13 +155,13 @@ settings.create-password: Create password
 settings.create-password-help: Create your password to login to Opengist via HTTP
 settings.change-password: Change password
 settings.change-password-help: Change your password to login to Opengist via HTTP
-settings.password-label-title: Password
+settings.password-label-title: كلمة المرور
 settings.header.account: Account
 settings.header.mfa: MFA
 settings.header.ssh: SSH
 settings.header.tokens: Access tokens
 settings.header.style: Style
-settings.style.gist-code: Gist code
+settings.style.gist-code: مقطع كود
 settings.style.no-soft-wrap: No Soft Wrap
 settings.style.soft-wrap: Soft Wrap
 settings.style.removed-lines-color: Removed lines color
@@ -194,29 +194,29 @@ settings.token-created: Token created, make sure to copy it now, you won't be ab
 settings.token-deleted: Access token deleted
 
 auth.signup-disabled: Administrator has disabled signing up
-auth.login: Login
-auth.signup: Register
-auth.new-account: New account
-auth.username: Username
-auth.password: Password
-auth.register-instead: Register instead
-auth.login-instead: Login instead
+auth.login: تسجيل الدخول
+auth.signup: انشاء
+auth.new-account: حساب جديد
+auth.username: اسم المستخدم
+auth.password: كلمة المرور
+auth.register-instead: انشاء حساب
+auth.login-instead: سجل الدخول
 auth.oauth: Continue with %s account
 auth.oauth.no-provider: OAuth provider not found
 auth.oauth.complete-registration: Complete your registration
 auth.oauth.complete-registration-button: Create account
 auth.oauth.signing-in-with: Signing in with %s
-auth.oauth.cancel: Cancel
+auth.oauth.cancel: الغاء
 auth.oauth.existing-account: Existing account?
 auth.oauth.already-have-account: If you already have an Opengist account, login first and link your %s account from your settings.
 auth.mfa: Multi-factor authentication
-auth.mfa.passkey: Passkey
-auth.mfa.passkeys: Passkeys
-auth.mfa.use-passkey: Use passkey
-auth.mfa.bind-passkey: Bind passkey
-auth.mfa.login-with-passkey: Login with passkey
+auth.mfa.passkey: مفتاح مرور
+auth.mfa.passkeys: مفاتيح مرور
+auth.mfa.use-passkey: استخدم مفتاح مرور
+auth.mfa.bind-passkey: اربط مفتاح مرور
+auth.mfa.login-with-passkey: سجل الدخول بمفتاح مرور
 auth.mfa.waiting-for-passkey-input: Waiting for input from browser interaction...
-auth.mfa.use-passkey-to-finish: Use a passkey to finish authentication
+auth.mfa.use-passkey-to-finish: استخدم مفتاح مرور لانهاء المصادقة
 auth.mfa.passkeys-help: Add a passkey to log to your account and to use as an MFA method.
 auth.mfa.passkey-name: Name
 auth.mfa.delete-passkey: Delete
@@ -236,7 +236,7 @@ auth.totp.disabled: TOTP successfully disabled
 auth.totp.disable: Disable TOTP
 auth.totp.enter-code: Enter the code from the Authenticator app
 auth.totp.enter-recovery-key: or a recovery key if you lost your device
-auth.totp.code: Code
+auth.totp.code: كود
 auth.totp.submit: Submit
 auth.totp.proceed: Proceed
 auth.totp.save-recovery-codes: Save your recovery codes in a safe place. You can use these codes to recover access to your account if you lose access to your authenticator app.
@@ -258,30 +258,30 @@ error.not-in-mfa-session: User is not in a MFA session
 error.no-file-uploaded: No file uploaded
 error.cannot-open-file: Cannot open uploaded file
 
-header.menu.all: All
-header.menu.new: New
-header.menu.search: Search
-header.menu.my-gists: My gists
-header.menu.liked: Liked
+header.menu.all: الكل
+header.menu.new: جديد
+header.menu.search: البحث عن
+header.menu.my-gists: مقاطعي
+header.menu.liked: تم الاعجاب
 header.menu.admin: Admin
-header.menu.settings: Settings
-header.menu.logout: Logout
-header.menu.register: Register
-header.menu.login: Login
+header.menu.settings: الاعدادات
+header.menu.logout: تسجيل الخروج
+header.menu.register: انشاء حساب
+header.menu.login: تسجيل الدخول
 header.menu.light: Light
 header.menu.dark: Dark
 header.menu.system: System
-footer.powered-by: تم التشغيل بواسطة %s
+footer.powered-by: . %s تم البناء على 
 
-pagination.older: Older
-pagination.newer: Newer
-pagination.previous: Previous
-pagination.next: Next
+pagination.older: أقدم
+pagination.newer: أحدث
+pagination.previous: سابق
+pagination.next: لاحق
 
 admin.admin_panel: Admin panel
 admin.general: General
 admin.users: Users
-admin.gists: Gists
+admin.gists: مقاطع
 admin.configuration: Configuration
 admin.invitations: Invitations
 admin.invitations.create: Create invitation
@@ -325,7 +325,7 @@ admin.gists.delete_confirm: Do you want to delete this gist ?
 admin.invitations.help: Invitations can be used to create an account even if signing up is disabled.
 admin.invitations.max_uses: Max uses
 admin.invitations.expires_at: Expires at
-admin.invitations.code: Code
+admin.invitations.code: كود
 admin.invitations.copy_link: Copy link
 admin.invitations.uses: Uses
 admin.invitations.expired: Expired

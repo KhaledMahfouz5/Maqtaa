@@ -1,4 +1,6 @@
 # مقطع
+تم نقل المشروع إلى منصة gitpasha
+url : `https://app.gitpasha.com/khaledmahfouz5/Maqtaa.git`
 
 <img height="108px" src="https://raw.githubusercontent.com/thomiceli/opengist/master/public/img/opengist.svg" alt="مقطع" align="right" />
 

@@ -1,0 +1,15 @@
+on:
+  deploy:
+    needs: build_and_push_image
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v5.0.0
+      - name: install ghaymah cli
+        run: curl -sSl https://cli.ghaymah.systems/install.sh | bash
+
+      - name: login to ghaymah
+        run: $HOME/ghaymah/bin/gy auth login --email "${{secrets.GHAYMAH_EMAIL}}" --password "${{secrets.GHAYMAH_PW}}"
+
+      - name: deploy
+        run: $HOME/ghaymah/bin/gy resource app launch
+

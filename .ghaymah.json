@@ -1,0 +1,17 @@
+{
+  "id": "0de03ccc-efb5-44f5-9a5e-47827cc89233",
+  "name": "maqtaa",
+  "projectId": "17b67804-4f4f-442a-a79f-c44273c6dcdf",
+  "ports": [
+    {
+      "expose": true,
+      "number": 6157
+    }
+  ],
+  "publicAccess": {
+    "enabled": true,
+    "domain": "auto"
+  },
+  "resourceTier": "t1",
+  "dockerFileName": "Dockerfile"
+}
